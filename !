@@ -14,9 +14,12 @@ master = repo.head.reference
 timestamp = datetime.datetime.fromtimestamp(master.commit.committed_date)
 git_commitid = str(master.commit.hexsha)
 
-file = open("file.txt", "w")
-file.write(git_commitid)
-file.close()
+
+ file = open("file.txt", "w")
+    file.write(git_commitid)
+    file.close()
+
+
 
 
 f1 = open("file.txt")
